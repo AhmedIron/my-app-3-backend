@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "db-migrate up && node dist/index.js",
     "build": "npx tsc",
     "dev": "nodemon src/index.ts"
   },
