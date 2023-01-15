@@ -2,11 +2,11 @@ import {Pool} from "pg"
 import config from "../config"
 
 const pool = new Pool({
-    host: config.host,
-    port: parseInt(config.db_port as string),
-    user: config.user,
-    password: config.password,
-    database: config.database,
+    host: "dpg-cf254nh4reb5o44944og-a",
+    port: 5432,
+    user: "postgres_1_e1gb_user",
+    password: "WYEuHbHed0emGuUHtMul5jmLFCFlvQau",
+    database: "postgres",
   });
   
   pool.on("error", (error: Error) => {
