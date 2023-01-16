@@ -39,10 +39,11 @@ console.log(req.body);
   };
 
   
-  export const indexProducts = async (_req: Request, res: Response) => {
+  export const indexProducts = async (req: Request, res: Response) => {
     try {
+      console.log(req);
       const product_index = await classProduct.index();
-      console.log(product_index);
+      
       
       res.json({
         message: "All Products Index",
