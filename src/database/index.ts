@@ -7,7 +7,7 @@ const pool = new Pool({
     user: config.user,
     password: config.password,
     database: config.database,
-    ssl: true
+    ssl: true,
   });
   
   pool.on("error", (error: Error) => {
