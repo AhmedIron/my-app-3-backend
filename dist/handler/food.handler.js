@@ -48,10 +48,10 @@ const deleteUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 exports.deleteUser = deleteUser;
-const indexProducts = (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const indexProducts = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        console.log(req);
         const product_index = yield classProduct.index();
-        console.log(product_index);
         res.json({
             message: "All Products Index",
             data: product_index,

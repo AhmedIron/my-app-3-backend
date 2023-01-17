@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
-const { PORT, NODE_ENV, POSTGRES_HOST, POSTGRES_PORT, POSTGRES_DB, POSTGRES_DB_test, POSTGRES_USER, POSTGRES_Password, BCRYPT_PASSWORD, SALT_ROUNDS, TOKEN_SECRET } = process.env;
+const { PORT, NODE_ENV, POSTGRES_HOST, POSTGRES_PORT, POSTGRES_DB, POSTGRES_DB_test, POSTGRES_USER, POSTGRES_Password, BCRYPT_PASSWORD, SALT_ROUNDS, TOKEN_SECRET, SSL, URL } = process.env;
 exports.default = {
     port: PORT,
     host: POSTGRES_HOST,
@@ -16,4 +16,5 @@ exports.default = {
     pepper: BCRYPT_PASSWORD,
     salt: SALT_ROUNDS,
     tokenSecret: TOKEN_SECRET,
+    ssl: true
 };

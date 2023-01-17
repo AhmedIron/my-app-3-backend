@@ -11,6 +11,7 @@ const pool = new pg_1.Pool({
     user: config_1.default.user,
     password: config_1.default.password,
     database: config_1.default.database,
+    ssl: true,
 });
 pool.on("error", (error) => {
     console.log(error.message);
