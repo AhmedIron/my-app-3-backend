@@ -12,7 +12,7 @@ export default {
   db_port: POSTGRES_PORT,
   user: POSTGRES_USER,
   password: POSTGRES_Password,
-  database: NODE_ENV === "dev" ? POSTGRES_DB : POSTGRES_DB_test,
+  database: POSTGRES_DB,
   pepper: BCRYPT_PASSWORD,
   salt: SALT_ROUNDS,
   tokenSecret: TOKEN_SECRET,
