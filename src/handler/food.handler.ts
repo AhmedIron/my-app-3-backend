@@ -41,7 +41,6 @@ console.log(req.body);
   
   export const indexProducts = async (req: Request, res: Response) => {
     try {
-      console.log(req);
       const product_index = await classProduct.index();
       
       
