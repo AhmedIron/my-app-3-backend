@@ -16,5 +16,5 @@ exports.default = {
     pepper: BCRYPT_PASSWORD,
     salt: SALT_ROUNDS,
     tokenSecret: TOKEN_SECRET,
-    ssl: true
+    ssl: SSL
 };
