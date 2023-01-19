@@ -52,7 +52,7 @@ app.post("/api/checkout", (req, res) => __awaiter(void 0, void 0, void 0, functi
     const session = yield stripe.checkout.sessions.create({
         line_items: lineItems,
         mode: 'payment',
-        success_url: "http://localhost:3000/success",
+        success_url: "https://am-restaurant.surge.sh/success",
         cancel_url: "http://localhost:3000/cancel"
     });
     res.send(JSON.stringify({

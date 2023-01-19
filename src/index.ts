@@ -58,7 +58,7 @@ app.get("/", function (req: Request, res: Response) {
     const session = await stripe.checkout.sessions.create({
       line_items :  lineItems,
       mode : 'payment',
-      success_url : "http://localhost:3000/success",
+      success_url : "https://am-restaurant.surge.sh/success",
       cancel_url : "http://localhost:3000/cancel"
     })
 
